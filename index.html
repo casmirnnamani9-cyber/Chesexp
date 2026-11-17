@@ -22,8 +22,21 @@
           <h1 class="brand-title">CHES<span>EXP</span></h1>
         </div>
 
-        <div class="status-pill" id="turnBadge">WHITE TO MOVE</div>
+        <div class="top-actions">
+          <div class="status-pill" id="turnBadge">WHITE TO MOVE</div>
+        </div>
       </header>
+
+      <div class="game-meta">
+        <div class="timer-panel white-panel" id="whiteTimerPanel">
+          <span>White</span>
+          <strong id="whiteClock">10:00</strong>
+        </div>
+        <div class="timer-panel black-panel" id="blackTimerPanel">
+          <span>Black</span>
+          <strong id="blackClock">10:00</strong>
+        </div>
+      </div>
 
       <main class="game-area">
         <aside class="info-panel">
@@ -34,6 +47,7 @@
 
           <div class="panel-block controls">
             <button id="newGameBtn" class="action-btn">New Game</button>
+            <button id="undoBtn" class="action-btn secondary">Undo</button>
             <button id="flipBtn" class="action-btn secondary">Flip Board</button>
           </div>
 
