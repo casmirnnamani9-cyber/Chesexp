@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chesexp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-glow"></div>
+
+    <div class="game-shell">
+      <div class="edge-lightning edge-lightning-left"></div>
+      <div class="edge-lightning edge-lightning-right"></div>
+
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-kicker">Royal</span>
+          <h1 class="brand-title">CHES<span>EXP</span></h1>
+        </div>
+
+        <div class="status-pill" id="turnBadge">WHITE TO MOVE</div>
+      </header>
+
+      <main class="game-area">
+        <aside class="info-panel">
+          <div class="panel-block">
+            <p class="label">Match</p>
+            <h2>Battle Board</h2>
+          </div>
+
+          <div class="panel-block controls">
+            <button id="newGameBtn" class="action-btn">New Game</button>
+            <button id="flipBtn" class="action-btn secondary">Flip Board</button>
+          </div>
+
+          <div class="panel-block">
+            <p class="label">Status</p>
+            <div id="statusText" class="status-text">Select a piece to begin.</div>
+          </div>
+
+          <div class="panel-block moves-panel">
+            <p class="label">Moves</p>
+            <ol id="moveList" class="move-list"></ol>
+          </div>
+        </aside>
+
+        <section class="board-panel">
+          <div id="board" class="board" aria-label="Chess board"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chess.js@1.0.0/dist/chess.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
